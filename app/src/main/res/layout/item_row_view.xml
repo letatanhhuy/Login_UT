@@ -1,0 +1,9 @@
+<TextView
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        android:id="@+id/txtTitle"
+        android:text="THIS TEXT CAN BE VERY VERY LONG"
+        android:textSize="30sp"
+        android:maxLines="1"
+        android:ellipsize="end"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"/>
