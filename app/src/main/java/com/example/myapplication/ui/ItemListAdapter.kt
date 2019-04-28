@@ -1,10 +1,10 @@
-package com.example.myapplication.UI
+package com.example.myapplication.ui
 
 import android.support.v7.widget.RecyclerView
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
-import com.example.myapplication.Entity.Item
+import com.example.myapplication.entity.Item
 import com.example.myapplication.R
 import kotlinx.android.synthetic.main.item_row_view.view.*
 

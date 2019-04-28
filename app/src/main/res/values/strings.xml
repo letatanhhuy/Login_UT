@@ -1,11 +1,12 @@
 <resources>
     <string name="app_name">My Application</string>
-    <string name="settings_title">Setting</string>
+    <string name="title">Payment Information</string>
     <string name="name_label">Name</string>
     <string name="name_hint">Name Hint</string>
-    <string name="dob_label">DOB</string>
-    <string name="email_label">Email Label</string>
-    <string name="email_hint">Email Hint</string>
+    <string name="epxDate_label">Expiration Date</string>
+    <string name="credit_label">Credit Card Number</string>
+    <string name="credit_hint">Credit Card Number</string>
+    <string name="ccv_hint">ccv</string>
     <string name="save">Save</string>
-    <string name="revert">My Application</string>
+    <string name="revert">Revert</string>
 </resources>

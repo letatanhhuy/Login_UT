@@ -1,4 +1,4 @@
-package com.example.myapplication.UI
+package com.example.myapplication.ui
 
 import android.os.Bundle
 import android.support.v4.app.Fragment
@@ -7,8 +7,8 @@ import android.support.v7.widget.RecyclerView
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
-import com.example.myapplication.Entity.Item
-import com.example.myapplication.Network.NetworkProvider
+import com.example.myapplication.entity.Item
+import com.example.myapplication.network.NetworkProvider
 import com.example.myapplication.R
 import kotlinx.android.synthetic.main.item_list_view.*
 

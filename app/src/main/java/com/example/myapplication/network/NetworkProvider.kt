@@ -1,6 +1,6 @@
-package com.example.myapplication.Network
+package com.example.myapplication.network
 
-import com.example.myapplication.Entity.Item
+import com.example.myapplication.entity.Item
 import retrofit2.Call
 import retrofit2.Callback
 import retrofit2.Response
