@@ -38,6 +38,20 @@ class CreditCardValidator:TextWatcher {
     }
 
     companion object {
+        public fun isVaidCreditCardNumber(s:String):Boolean {
+            var retVal = true
+            if(s.length == 16) {
+                for (c in s) {
+                    if (!c.isDigit()) {
+                        retVal = false
+                        break
+                    }
+                }
+            } else {
+                retVal = false
+            }
+            return retVal
+        }
         private const val TAG = "CreditCardValidator"
     }
 }
