@@ -41,8 +41,9 @@ class CreditCardValidator:TextWatcher {
     companion object {
         fun isValidCreditCardNumber(s:String):Boolean {
             var retVal = true
-            if(s.length == 16) {
-                for (c in s) {
+            if(s.length == 19) {
+                val temp = s.replace("\\s".toRegex(),"")
+                for (c in temp) {
                     if (!c.isDigit()) {
                         retVal = false
                         break

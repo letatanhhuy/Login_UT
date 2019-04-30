@@ -39,7 +39,6 @@ class LoginFragment:Fragment(),View.OnClickListener {
     override fun onClick(v: View?) {
         when(v?.id) {
             R.id.saveButton -> {
-
                 Log.d(TAG, "onClick: saveButton")
                 if(SharePreferenceHelper.saveCreditCardInfo(
                     SharedPreferenceEntity(txtCCName.text.toString()
