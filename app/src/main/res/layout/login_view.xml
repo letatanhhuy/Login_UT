@@ -21,7 +21,7 @@
             android:layout_marginTop="@dimen/activity_vertical_margin"
             android:textAppearance="?android:attr/textAppearanceMedium"/>
     <EditText
-            android:id="@+id/userNameInput"
+            android:id="@+id/txtCCName"
             android:hint="@string/name_hint"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
@@ -38,7 +38,7 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content">
         <EditText
-                android:id="@+id/creditInput"
+                android:id="@+id/txtCCNum"
                 android:hint="@string/credit_hint"
                 android:maxLength="19"
                 android:inputType="number"
@@ -48,7 +48,7 @@
                 android:layout_weight="1"
                 android:layout_gravity="center_horizontal"/>
         <EditText
-                android:id="@+id/ccvInput"
+                android:id="@+id/txtCCccv"
                 android:hint="@string/ccv_hint"
                 android:maxLength="4"
                 android:layout_weight="2"

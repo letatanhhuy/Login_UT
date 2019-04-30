@@ -1,13 +1,13 @@
 package com.example.myapplication.util
 
+import android.support.annotation.VisibleForTesting
 import android.text.Editable
 import android.text.TextWatcher
 import java.lang.StringBuilder
 
 class CreditCardValidator:TextWatcher {
-    var isAdd = false
     override fun onTextChanged(s: CharSequence?, start: Int, before: Int, count: Int) {
-        isAdd = before < count
+
     }
 
     override fun beforeTextChanged(s: CharSequence?, start: Int, count: Int, after: Int) {
@@ -25,7 +25,8 @@ class CreditCardValidator:TextWatcher {
         }
     }
 
-    private fun updateCreditCardText(input:String):String {
+    @VisibleForTesting
+    fun updateCreditCardText(input:String):String {
         val originString = input.replace("\\s".toRegex(),"")
         val sb = StringBuilder(originString)
 
@@ -38,7 +39,7 @@ class CreditCardValidator:TextWatcher {
     }
 
     companion object {
-        public fun isVaidCreditCardNumber(s:String):Boolean {
+        fun isValidCreditCardNumber(s:String):Boolean {
             var retVal = true
             if(s.length == 16) {
                 for (c in s) {
